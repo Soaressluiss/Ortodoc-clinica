@@ -1,13 +1,15 @@
 import React from 'react';
-import Header from './Components/Header/Header';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home';
 
-
-const Routes = ()=>{
-    return(
-        <>
-            <Header />
-        </>
+const Rotas = () => {
+    return (
+            <BrowserRouter>
+                <Routes>
+                    <Route exact path='/' element={<Home />} />  
+                </Routes>
+            </BrowserRouter>     
     )
 }
 
-export default Routes;
+export default Rotas;

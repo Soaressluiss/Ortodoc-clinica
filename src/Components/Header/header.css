@@ -1,0 +1,13 @@
+.itemMenu{
+
+    text-decoration:  none;
+    padding: 1rem;
+    color: #4a9ae9;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Heebo', sans-serif;
+}
+
+.itemMenu:hover{
+    color:#167fe7;
+}

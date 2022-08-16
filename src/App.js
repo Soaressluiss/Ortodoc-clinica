@@ -2,14 +2,16 @@ import React from 'react';
 
 
 import './App.css';
-import Routes from './Routes';
+import GlobalStyle from './GlobalStyle';
+import Rotas from './Routes';
 
 
 function App() {
   return (
-  
+    
     <>
-      <Routes />
+      <GlobalStyle />
+      <Rotas />
     </>
   )
 }
