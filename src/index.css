@@ -4,6 +4,11 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  /* background-image: url("./assets/shapes/curveAsymmetrical.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+
 }
 
 
