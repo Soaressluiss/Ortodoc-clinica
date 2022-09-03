@@ -10,7 +10,7 @@ const Container = styled.section`
     display: flex;
     flex-direction: column;
     align-content:center;
-` 
+`
 const Tittle = styled.h2`
     margin: 1rem auto;
     color: ${colorPrimary};
@@ -23,10 +23,16 @@ const Wrapper = styled.div`
     gap: 2rem;
     text-align: justify;
     flex-wrap:nowrap;
-    margin: 1rem 2.3rem;
+    margin: 2rem 2.3rem;
+  
 `
 const Tratamentos = styled.article`
+    -webkit-box-shadow: 3px 11.5px 17.5px 5px #ddd;
+    -moz-box-shadow: 3px 11.5px 17.5px 5px #ddd;
+    box-shadow: 3px 11.5px 17.5px 5px #ddd;
     display: flex;
+    padding: 0.6rem;
+    border-radius: 10px;
     flex-direction: column;
     align-items: center;
     h3{
@@ -48,30 +54,30 @@ const Section03 = () => {
             <Tittle>Todo os tratamentos e cuidados para o seu sorriso.</Tittle>
             <Wrapper>
                 <Tratamentos>
-                    <img src={checapes} 
-                    alt="implante"
-                    width="15%" />
+                    <img src={checapes}
+                        alt="implante"
+                        width="15%" />
                     <h3> Implantes </h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ex minus, pariatur tempora officia voluptatum totam beatae voluptate iusto eum veritatis adipisci, facere maiores illum dolor ipsam iure quo. Quas!</p>
                 </Tratamentos>
                 <Tratamentos>
-                    <img src={aparelho} 
-                    alt="aparelho"
-                    width="15%" />
+                    <img src={aparelho}
+                        alt="aparelho"
+                        width="15%" />
                     <h3> Aparelho Dentário </h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ex minus, pariatur tempora officia voluptatum totam beatae voluptate iusto eum veritatis adipisci, facere maiores illum dolor ipsam iure quo. Quas!</p>
                 </Tratamentos>
                 <Tratamentos>
-                    <img src={clareamento} 
-                    alt="clareamento"
-                    width="15%" />
+                    <img src={clareamento}
+                        alt="clareamento"
+                        width="15%" />
                     <h3> Clareamento </h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ex minus, pariatur tempora officia voluptatum totam beatae voluptate iusto eum veritatis adipisci, facere maiores illum dolor ipsam iure quo. Quas!</p>
                 </Tratamentos>
                 <Tratamentos>
-                    <img src={implante} 
-                    alt="implante"
-                    width="15%" />
+                    <img src={implante}
+                        alt="implante"
+                        width="15%" />
                     <h3> Implantes </h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ex minus, pariatur tempora officia voluptatum totam beatae voluptate iusto eum veritatis adipisci, facere maiores illum dolor ipsam iure quo. Quas!</p>
                 </Tratamentos>

@@ -3,5 +3,4 @@
 <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Poppins:wght@500&family=Rubik&display=swap" rel="stylesheet">
 
 font-family: 'Heebo', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Rubik', sans-serif;
+font-family: '

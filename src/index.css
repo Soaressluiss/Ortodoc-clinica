@@ -10,5 +10,7 @@ body {
   background-size: cover; */
 
 }
-
+body, html {
+  height: 100%;
+}
 
