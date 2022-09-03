@@ -1,29 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from "../../assets/img/logo.png"
+import reactIcon from "../../assets/icons/react icon.svg"
 import { colorPrimary, colorSecundary } from '../../variaveis';
 
 
 const Wrapper = styled.footer`
     display: grid;
     justify-content: space-evenly;
+    grid-template: auto / 1fr 1fr 1fr;
     grid-template-areas: "l s  c "
                         "  i i i ";
-    margin: 2rem;
-
+    margin: 8rem 2rem 4rem 2rem;
+    
+    border-top: 2px solid ${colorSecundary};
+    border-bottom: 2px solid ${colorSecundary};
 `
 const LogoAndMsg = styled.div`
     display: flex;
     flex-direction: column;
     grid-area: l;
-    align-items: center;
-    align-content: flex-end;
     p {
-        width: 50%;
+    
         color: ${colorSecundary};
         font-family: 'Poppins', sans-serif;
         font-weight: bold;
-        font-size:.7rem;
+        font-size:1rem;
     }
 
 `
@@ -32,19 +34,21 @@ const ServicoContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    p{
+    h3{
         font-size: 1.3rem;
         color: ${colorPrimary};
         text-transform: uppercase;
         font-family: 'Rubik', sans-serif;
         font-weight: bold;
     }
-    li{
+    li , a{
         font-family: 'Heebo', sans-serif;
         color: ${colorSecundary};
         font-weight: bold;
         list-style: none;
         padding: .3rem 0;
+        text-decoration: none;
+        cursor: pointer;
     }
 `
 const ContatosContainer = styled(ServicoContainer)`
@@ -56,6 +60,23 @@ const Information = styled.div`
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    h4, p{
+        color: ${colorSecundary};
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+    }
+    a {
+        
+        text-decoration: none;
+        color: #00d9ff;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+
+    }
+    a:hover{
+        color: ${colorPrimary};
+        transition: 1s;
+    }
 `
 const Footer = () => {
     return (
@@ -64,21 +85,21 @@ const Footer = () => {
                 <LogoAndMsg>
                     <img
                         src={logo}
-                        width="10%"
+                        width="30%"
                         alt="logo do footer" />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iure suscipit magnam deserunt mollitia eligendi, vel omnis blanditiis quis, odio inventore optio sed? Ipsa explico?</p>
                 </LogoAndMsg>
                 <ServicoContainer>
-                    <p>Serviços</p>
+                    <h3>Serviços</h3>
                     <ul>
-                        <li>Clareamento</li>
-                        <li>Restauração</li>
-                        <li>Ortodontia</li>
-                        <li>Implantes Dentários</li>
+                        <li><a href="/">Clareamento</a></li>
+                        <li> <a href="/">Restauração</a></li>
+                        <li><a href="/">Ortodontia</a></li>
+                        <li><a href="/">Implantes Dentários</a></li>
                     </ul>
                 </ServicoContainer>
                 <ContatosContainer>
-                    <p>Contato</p>
+                    <h3>Contato</h3>
                     <ul>
                         <li>Sua Rua, Brasil-SP</li>
                         <li>contatoortodoc@gmail.com</li>
@@ -89,9 +110,15 @@ const Footer = () => {
             </Wrapper>
             <Information>
                 <h4>Ortodoc 2022 &copy; todos direitos reservados </h4>
-                <p>Feito com <img src="" alt="" /></p>
-                <a href="d" target="_blank"> Github Luís</a>
-                <a href="a" target="_blank"> Linkedin Luís</a>
+                <p>Feito com</p>
+                <img
+                    src={reactIcon}
+                    width = "3%"
+                    style={{color:"blue"}} 
+                    alt=""
+                    /> #TODO  {/* Arrumar aqui depois */}
+                <a href="d" target="_blank"> Github Dev</a>
+                <a href="a" target="_blank"> Linkedin Dev</a>
             </Information>
         </>
     )
