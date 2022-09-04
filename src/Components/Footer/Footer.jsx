@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import logo from "../../assets/img/logo.png"
 import reactIcon from "../../assets/icons/react icon.svg"
 import { colorPrimary, colorSecundary } from '../../variaveis';
+import { BsFillHouseDoorFill, BsGlobe2, BsTelephoneFill, BsWhatsapp } from "react-icons/bs"
 
 
 const Wrapper = styled.footer`
@@ -26,6 +27,7 @@ const LogoAndMsg = styled.div`
         font-family: 'Poppins', sans-serif;
         font-weight: bold;
         font-size:1rem;
+        text-align: justify;
     }
 
 `
@@ -58,14 +60,13 @@ const Information = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: .6rem;
     h4, p{
         color: ${colorSecundary};
         font-family: 'Poppins', sans-serif;
         font-weight: bold;
     }
-    a {
-        
+    a {     
         text-decoration: none;
         color: #000000;
         cursor: pointer;
@@ -100,10 +101,10 @@ const Footer = () => {
                 <ContatosContainer>
                     <h3>Contato</h3>
                     <ul>
-                        <li>Sua Rua nº00, Brasil - SP</li>
-                        <li>contatoortodoc@gmail.com</li>
-                        <li>(00)123456789</li>
-                        <li>(00)987654321</li>
+                        <li> {<BsFillHouseDoorFill />}  Sua Rua nº00, Brasil - SP</li>
+                        <li> {<BsGlobe2 />}  contatoortodoc@gmail.com</li>
+                        <li>{<BsTelephoneFill />}  (00)123456789</li>
+                        <li> {<BsWhatsapp />}  (00)987654321</li>
                     </ul>
                 </ContatosContainer>
             </Wrapper>
@@ -112,10 +113,9 @@ const Footer = () => {
                 <p>Feito com</p>
                 <img
                     src={reactIcon}
-                    width = "3%"
-                    style={{color:"blue"}} 
-                    alt=""
-                    />
+                    width="3%"
+                    alt="react icone"
+                />
                 <a href="d" target="_blank"> Github</a>
                 <a href="a" target="_blank"> Linkedin</a>
             </Information>

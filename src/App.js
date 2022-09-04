@@ -10,8 +10,8 @@ function App() {
   return (
     
     <>
-      <GlobalStyle />
       <Rotas />
+      <GlobalStyle />
     </>
   )
 }

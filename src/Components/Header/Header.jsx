@@ -3,6 +3,7 @@ import styled from "styled-components"
 import logo from "../../assets/img/logo.png"
 import { Link } from "react-router-dom"
 
+
 const Nav = styled.nav`
     display: flex;
     position: fixed;
@@ -10,7 +11,7 @@ const Nav = styled.nav`
     top: 0;
     justify-content: space-between;
     align-items: center;
-    background-color: #C0D6DF;
+    /* background-color: #D8E7ED; */
 `
 const List = styled.ul`
     display: flex;
@@ -19,6 +20,7 @@ const List = styled.ul`
     text-decoration:  none;
     padding: 1rem;
     color: #4a9ae9;
+    /* color: white; */
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Heebo', sans-serif;
@@ -32,7 +34,7 @@ const List = styled.ul`
 const Header = () => {
     return (
         <Nav>
-         <Link to={'/'}> <img src={logo} width="100px" alt="logo do site" /> </Link> 
+            <Link to={'/'}> <img src={logo} width="100px" alt="logo do site" /> </Link> 
             <List>
                 <Link className='itemMenu' to={'/'}>Home</Link>
                 <Link className='itemMenu' to={'/sobre'}>Sobre</Link>
