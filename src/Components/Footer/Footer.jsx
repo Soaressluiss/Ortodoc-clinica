@@ -48,7 +48,6 @@ const ServicoContainer = styled.div`
         list-style: none;
         padding: .3rem 0;
         text-decoration: none;
-        cursor: pointer;
     }
 `
 const ContatosContainer = styled(ServicoContainer)`
@@ -68,7 +67,7 @@ const Information = styled.div`
     a {
         
         text-decoration: none;
-        color: #00d9ff;
+        color: #000000;
         cursor: pointer;
         font-family: 'Poppins', sans-serif;
 
@@ -101,7 +100,7 @@ const Footer = () => {
                 <ContatosContainer>
                     <h3>Contato</h3>
                     <ul>
-                        <li>Sua Rua, Brasil-SP</li>
+                        <li>Sua Rua nº00, Brasil - SP</li>
                         <li>contatoortodoc@gmail.com</li>
                         <li>(00)123456789</li>
                         <li>(00)987654321</li>
@@ -116,9 +115,9 @@ const Footer = () => {
                     width = "3%"
                     style={{color:"blue"}} 
                     alt=""
-                    /> #TODO  {/* Arrumar aqui depois */}
-                <a href="d" target="_blank"> Github Dev</a>
-                <a href="a" target="_blank"> Linkedin Dev</a>
+                    />
+                <a href="d" target="_blank"> Github</a>
+                <a href="a" target="_blank"> Linkedin</a>
             </Information>
         </>
     )

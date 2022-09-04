@@ -10,7 +10,7 @@ const Section = styled.section`
     align-items: center;
     padding: 0 1.2rem;
     gap: 10rem;
-    margin: 1rem;
+    margin-top: 8.5rem;
 `
 const Tittle = styled.p`
     font-family: 'Heebo', sans-serif;

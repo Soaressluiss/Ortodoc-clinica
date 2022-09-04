@@ -5,12 +5,12 @@ import { Link } from "react-router-dom"
 
 const Nav = styled.nav`
     display: flex;
-    /* position: fixed; */
-    justify-content: space-evenly;
-    gap: 28rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 4rem;
-    
+    background-color: #C0D6DF;
 `
 const List = styled.ul`
     display: flex;
