@@ -1,21 +1,47 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from "../../assets/img/logo.png"
-import reactIcon from "../../assets/icons/react icon.svg"
 import { colorPrimary, colorSecundary } from '../../variaveis';
-import { BsFillHouseDoorFill, BsGlobe2, BsTelephoneFill, BsWhatsapp } from "react-icons/bs"
-
+import { BsFacebook, BsFillHouseDoorFill, BsGlobe2, BsInstagram, BsTelephoneFill, BsTwitter, BsWhatsapp } from "react-icons/bs"
+import { FaReact } from "react-icons/fa";
 
 const Wrapper = styled.footer`
     display: grid;
     justify-content: space-evenly;
     grid-template: auto / 1fr 1fr 1fr;
-    grid-template-areas: "l s  c "
+    grid-template-areas: " r r r "
+                        " l s  c "
                         "  i i i ";
     margin: 8rem 2rem 4rem 2rem;
     
     border-top: 2px solid ${colorSecundary};
     border-bottom: 2px solid ${colorSecundary};
+`
+const SocialMedias = styled.div`
+    grid-area: r;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    p{
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: ${colorPrimary};
+        font-family: 'Heebo', sans-serif;
+    }
+    ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+    }
+    svg{
+        color: ${colorSecundary};
+        font-size: 1.4rem;
+    }
+    svg:hover{
+        color: ${colorPrimary};
+        transition: 1s;
+    }
 `
 const LogoAndMsg = styled.div`
     display: flex;
@@ -24,9 +50,9 @@ const LogoAndMsg = styled.div`
     p {
     
         color: ${colorSecundary};
-        font-family: 'Poppins', sans-serif;
         font-weight: bold;
-        font-size:1rem;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size:1.1rem;
         text-align: justify;
     }
 
@@ -40,11 +66,11 @@ const ServicoContainer = styled.div`
         font-size: 1.3rem;
         color: ${colorPrimary};
         text-transform: uppercase;
-        font-family: 'Rubik', sans-serif;
         font-weight: bold;
+        font-family: 'Heebo', sans-serif;
     }
     li , a{
-        font-family: 'Heebo', sans-serif;
+        font-family: 'Noto Sans JP', sans-serif;
         color: ${colorSecundary};
         font-weight: bold;
         list-style: none;
@@ -63,25 +89,28 @@ const Information = styled.div`
     gap: .6rem;
     h4, p{
         color: ${colorSecundary};
-        font-family: 'Poppins', sans-serif;
         font-weight: bold;
+        font-family: 'Heebo', sans-serif;
     }
-    a {     
-        text-decoration: none;
-        color: #000000;
-        cursor: pointer;
-        font-family: 'Poppins', sans-serif;
-
-    }
-    a:hover{
-        color: ${colorPrimary};
-        transition: 1s;
+    
+    svg{
+        font-size: 1.8rem;
+        color:${colorPrimary};
     }
 `
 const Footer = () => {
     return (
         <>
             <Wrapper>
+                <SocialMedias>
+                    <p>Nos encontre em nossas redes sociais</p>
+                    <ul>
+                        <li> <a href="/"> {<BsFacebook/>}</a> </li>
+                        <li> <a href="/"> {<BsInstagram/>}</a> </li>
+                        <li> <a href="/"> {<BsTwitter/>}</a> </li>
+
+                    </ul>
+                </SocialMedias>
                 <LogoAndMsg>
                     <img
                         src={logo}
@@ -111,13 +140,7 @@ const Footer = () => {
             <Information>
                 <h4>Ortodoc 2022 &copy; todos direitos reservados </h4>
                 <p>Feito com</p>
-                <img
-                    src={reactIcon}
-                    width="3%"
-                    alt="react icone"
-                />
-                <a href="d" target="_blank"> Github</a>
-                <a href="a" target="_blank"> Linkedin</a>
+                <FaReact />
             </Information>
         </>
     )

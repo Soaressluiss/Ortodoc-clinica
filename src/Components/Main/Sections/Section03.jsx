@@ -14,6 +14,7 @@ const Container = styled.section`
 const Tittle = styled.h2`
     margin: 1rem auto;
     color: ${colorPrimary};
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 2rem;
 
@@ -37,16 +38,14 @@ const Tratamentos = styled.article`
     align-items: center;
     h3{
         color: ${colorPrimary};
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Heebo', sans-serif;
     }
     p{
-        font-family: 'Poppins', sans-serif;
         color: ${colorSecundary};
-
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1.2rem;
     }
 `
-
-
 
 const Section03 = () => {
     return (

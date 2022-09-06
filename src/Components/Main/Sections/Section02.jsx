@@ -16,22 +16,24 @@ const Infos = styled.div`
 const Title = styled.p`
     color: #4A9AE9;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-family: 'Poppins', sans-serif;
     margin-bottom: .8rem;
 
 `
 const Msg = styled.p`
     color: ${colorPrimary};
-    font-size: 1rem;
-    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
     font-weight: bold;
+    margin-top: 1.8prem;
+    font-family: 'Noto Sans JP', sans-serif;
+
 `
 const NameCLinica = styled.span`
     color: #013CC8;
-    font-size: 1rem;
-    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 
 `
 
@@ -40,7 +42,7 @@ const Section02 = () => {
     return (
         <Section>
             <Imagem src={imagem02}
-                alt="dentist-doing-a-check-up-on-the-patient"
+                alt="dentista e paciente fazendo tratamento"
                 width="40%" />
             <Infos>
                 <Title>Sempre com os melhores profissonais para atende-lo.</Title>

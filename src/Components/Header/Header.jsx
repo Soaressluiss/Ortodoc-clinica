@@ -23,7 +23,7 @@ const List = styled.ul`
     /* color: white; */
     font-weight: bold;
     text-transform: uppercase;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Poppins', sans-serif;
     }
     .itemMenu:hover{
     color:#167fe7;

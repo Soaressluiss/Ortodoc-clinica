@@ -15,17 +15,24 @@ const Tittle = styled.p`
     font-family: 'Heebo', sans-serif;
     color: ${colorPrimary};
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     margin:0;
+    letter-spacing: .5rem;
 
 `
-const TittlePrincipal = styled(Tittle)`
-    font-size: 2.5rem;
+const TittlePrincipal = styled.h2`
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
     margin:  0;
+    font-weight: bold;
 `
-const Mensagem = styled(Tittle)`
+const Mensagem = styled.p`
     text-align: justify;
-    font-size: 1.1rem;
+    color: ${colorPrimary};
+    margin:0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
 `
 const Btn = styled.button`
     background-color: #167fe7;
@@ -57,11 +64,11 @@ const Section01 = () => {
                 <Tittle>Clinica Odontológica</Tittle>
                 <TittlePrincipal> Ortodoc </TittlePrincipal>
                 <Mensagem>Desde de 2005 atendendo você e sua família com muito amor e cuidado,
-                 mudando sorrisos e vidas! </Mensagem>
+                    mudando sorrisos e vidas! </Mensagem>
                 <Btn> Saiba mais!</Btn>
             </div>
             <Imagem src={Image}
-                alt="portrait-of-smiling-dentist-standing-with-arms-crossed-with-her-colleague-min"
+                alt="imagem dos dentistas da clinica"
                 width='40%' />
         </Section>
     )

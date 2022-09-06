@@ -36,25 +36,24 @@ const Section = styled.section`
         padding: 0.6rem;
         border-radius: 10px; 
     }
-`
-const Comentario = styled.p`
-    font-family: 'Poppins', sans-serif;
-    color: ${colorSecundary};
-    text-align: justify;
-    font-size: .8rem;
-`
+    `
 const NameCliente = styled.p`
     color: ${colorPrimary};
-    font-family: 'Rubik', sans-serif;
     font-size: 1.3rem;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+`
+
+const Comentario = styled.p`
+    color: ${colorSecundary};
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: justify;
+    font-size: 1.1rem;
 `
 const Cliente = styled.img`
     width: 40%;
     border-radius: 50%;
 `
-
-
-
 
 const Section04 = () => {
     return (
