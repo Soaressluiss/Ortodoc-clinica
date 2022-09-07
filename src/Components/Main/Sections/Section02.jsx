@@ -29,12 +29,13 @@ const Msg = styled.p`
 
 `
 const NameCLinica = styled.span`
-    color: #013CC8;
+    color: ${colorPrimary};
     font-size: 1.2rem;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-
+    
 `
+
 export const Imagem = styled.img`
     border-radius: 10px;
     box-shadow: 1px 1px 5px black;
@@ -49,7 +50,7 @@ const Section02 = () => {
                 width="40%" />
             <Infos>
                 <Title>Sempre com os melhores profissonais para atende-lo.</Title>
-                <Msg> Com mais de 10 anos de experiência no mercado em todas as áreas da ortodontia, a <NameCLinica> ORTODOC </NameCLinica> possui profissionais altamente qualificados para cuidar melhor do seu sorriso e da sua família.</Msg>
+                <Msg> Com mais de 10 anos de experiência no mercado em todas as áreas da ortodontia, a <NameCLinica>ORTODOC</NameCLinica> possui profissionais altamente qualificados para cuidar melhor do seu sorriso e da sua família.</Msg>
                 <Msg> venha nos conhecer e marcar uma avaliação.</Msg>
             </Infos>
         </Section>

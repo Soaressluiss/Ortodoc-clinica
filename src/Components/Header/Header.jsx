@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from "styled-components"
-import logo from "../../assets/img/logo.png"
+import logo from "../../assets/img/logo-white.svg"
 import { Link } from "react-router-dom"
+import { colorSecundary } from '../../variaveis';
 
 
 const Nav = styled.nav`
@@ -9,18 +10,24 @@ const Nav = styled.nav`
     position: fixed;
     width: 100%;
     top: 0;
+    background-color:${colorSecundary};
     justify-content: space-between;
     align-items: center;
-    /* background-color: #D8E7ED; */
+    z-index: 9999;
+    img {
+        width:30%;
+        padding: .8rem;
+    }
 `
 const List = styled.ul`
     display: flex;
 
     .itemMenu{
     text-decoration:  none;
+    font-size: 1.1rem;
     padding: 1rem;
     color: #4a9ae9;
-    /* color: white; */
+    color: white;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
@@ -34,7 +41,7 @@ const List = styled.ul`
 const Header = () => {
     return (
         <Nav>
-            <Link to={'/'}> <img src={logo} width="100px" alt="logo do site" /> </Link> 
+            <Link to={'/'}> <img src={logo}  alt="logo do site" /> </Link> 
             <List>
                 <Link className='itemMenu' to={'/'}>Home</Link>
                 <Link className='itemMenu' to={'/sobre'}>Sobre</Link>

@@ -44,6 +44,7 @@ const Tratamentos = styled.article`
         color: ${colorSecundary};
         font-family: 'Noto Sans JP', sans-serif;
         font-size: 1.2rem;
+        text-align: justify;
     }
 `
 
@@ -56,29 +57,29 @@ const Section03 = () => {
                     <img src={checapes}
                         alt="implante"
                         width="15%" />
-                    <h3> Implantes </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ex minus, pariatur tempora officia voluptatum totam beatae voluptate iusto eum veritatis adipisci, facere maiores illum dolor ipsam iure quo. Quas!</p>
+                    <h3> Check Ups </h3>
+                    <p>Ir a um dentista geral é um tipo de cuidado do qual não dá para abrir mão, pois esse profissional está capacitado para avaliar desde a aparência até o estado da estrutura dos dentes e a estrutura óssea da face.</p>
                 </Tratamentos>
                 <Tratamentos>
                     <img src={aparelho}
                         alt="aparelho"
                         width="15%" />
                     <h3> Aparelho Dentário </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ex minus, pariatur tempora officia voluptatum totam beatae voluptate iusto eum veritatis adipisci, facere maiores illum dolor ipsam iure quo. Quas!</p>
+                    <p>É um dispositivo que estimula os movimentos dos dentes. O objetivo dessa movimentação é corrigir a posição dos dentes na arcada dentária, sempre que uma pessoa desenvolve má formação nas estruturas bucais e/ou faciais.</p>
                 </Tratamentos>
                 <Tratamentos>
                     <img src={clareamento}
                         alt="clareamento"
                         width="15%" />
                     <h3> Clareamento </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ex minus, pariatur tempora officia voluptatum totam beatae voluptate iusto eum veritatis adipisci, facere maiores illum dolor ipsam iure quo. Quas!</p>
+                    <p>O clareamento dental é uma microlimpeza da estrututura do dente. Por causa de pigmentos externos, com o passar do tempo, o dente fica com uma cor mais amarelada. Seu tratamento é indicado para quem busca um belo sorriso.</p>
                 </Tratamentos>
                 <Tratamentos>
                     <img src={implante}
                         alt="implante"
                         width="15%" />
                     <h3> Implantes </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ex minus, pariatur tempora officia voluptatum totam beatae voluptate iusto eum veritatis adipisci, facere maiores illum dolor ipsam iure quo. Quas!</p>
+                    <p>O implante dentário é um procedimento em que um pino de titânio é utilizado para substituir a raiz do dente. Ele é fixado ao osso por meio de uma cirurgia e, após a integração óssea, é feita a colocação da prótese definitiva.</p>
                 </Tratamentos>
             </Wrapper>
         </Container>

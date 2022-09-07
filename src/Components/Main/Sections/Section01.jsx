@@ -12,20 +12,13 @@ const Section = styled.section`
     gap: 10rem;
     margin-top: 8.5rem;
 `
-const Tittle = styled.p`
-    font-family: 'Heebo', sans-serif;
-    color: ${colorPrimary};
-    font-weight: bold;
-    font-size: 1.6rem;
-    margin:0;
-    letter-spacing: .5rem;
 
-`
 const TittlePrincipal = styled.h2`
     font-size: 3rem;
     font-family: 'Poppins', sans-serif;
     margin:  0;
     font-weight: bold;
+    color: ${colorPrimary};
 `
 const Mensagem = styled.p`
     text-align: justify;
@@ -58,7 +51,6 @@ const Section01 = () => {
     return (
         <Section>
             <div>
-                <Tittle>Clinica Odontológica</Tittle>
                 <TittlePrincipal> Ortodoc </TittlePrincipal>
                 <Mensagem>Desde de 2005 atendendo você e sua família com muito amor e cuidado,
                     mudando sorrisos e vidas! </Mensagem>

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from "../../assets/img/logo.png"
+import logo from "../../assets/img/logo-blue.svg"
 import { colorPrimary, colorSecundary } from '../../variaveis';
-import { BsFacebook, BsFillHouseDoorFill, BsGlobe2, BsHeart, BsInstagram, BsTelephoneFill, BsTwitter, BsWhatsapp } from "react-icons/bs"
+import { BsFacebook, BsFillHouseDoorFill, BsGlobe2, BsInstagram, BsTelephoneFill, BsTwitter, BsWhatsapp } from "react-icons/bs"
 import { FaReact } from "react-icons/fa";
 
 const Wrapper = styled.footer`
@@ -21,6 +21,7 @@ const SocialMedias = styled.div`
     grid-area: r;
     display: flex;
     flex-direction: row;
+    justify-content:space-between;
     align-content: center;
     p{
         font-size: 1rem;
@@ -55,6 +56,9 @@ const LogoAndMsg = styled.div`
         font-size:1.1rem;
         text-align: justify;
     }
+    img{
+        width:70%
+    }
 
 `
 const ServicoContainer = styled.div`
@@ -76,6 +80,9 @@ const ServicoContainer = styled.div`
         list-style: none;
         padding: .3rem 0;
         text-decoration: none;
+    }
+    a:hover {
+        color: #08d4f8
     }
 `
 const ContatosContainer = styled(ServicoContainer)`
@@ -113,9 +120,9 @@ const Footer = () => {
                 <LogoAndMsg>
                     <img
                         src={logo}
-                        width="30%"
                         alt="logo do footer" />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iure suscipit magnam deserunt mollitia eligendi, vel omnis blanditiis quis, odio inventore optio sed? Ipsa explico?</p>
+                    <p>Nós da ORTODOC, amamos o que fazemos e estamos sempre buscando entregar o melhor de mais moderno em Ortodontia.</p>
+                    <p>ORTODOC seu sorriso é a nossa Alegria! &#128512;</p>
                 </LogoAndMsg>
                 <ServicoContainer>
                     <h3>Serviços</h3>
@@ -137,7 +144,7 @@ const Footer = () => {
                 </ContatosContainer>
             </Wrapper>
             <Information>
-                <h4>Ortodoc 2022 &copy; todos direitos reservados </h4>
+                <h4> &copy; Ortodoc 2022 - todos direitos reservados </h4>
                 <p>Feito com</p>
                 <FaReact style={{ color: `${colorPrimary}` }} />
             </Information>

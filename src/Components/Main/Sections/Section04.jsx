@@ -39,7 +39,7 @@ const Section = styled.section`
     `
 const NameCliente = styled.p`
     color: ${colorPrimary};
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: 'Heebo', sans-serif;
     font-weight: bold;
 `
@@ -63,17 +63,17 @@ const Section04 = () => {
                 <div>
                     <Cliente src={boy1} alt="cliente numero 1" />
                     <NameCliente>Pedro Carlos Sobrinho - Niterói - RJ</NameCliente>
-                    <Comentario>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum explicabo quam saepe optio sint porro necessitatibus laborum, fugit adipisci impedit officiis</Comentario>
+                    <Comentario>Com minha vida corrida, dificilmente sobra um tempinho para ir ao dentista, mas com várias filiais da Ortodoc na minha cidade não preciso me preocupar em perder tempo ao sair de casa. Obrigado Ortodoc! :)</Comentario>
                 </div>
                 <div>
                     <Cliente src={girl} alt="cliente numero 2" />
                     <NameCliente>Ana Clara Fonseca - São Paulo - SP</NameCliente>
-                    <Comentario>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum explicabo quam saepe optio sint porro necessitatibus laborum, fugit adipisci impedit officiis</Comentario>
+                    <Comentario>Gosto bastante das instalações da clínica, sempre levo meu filho para avaliar como seus dentes estão, sempre fui muito bem recebida  por toda a equipe da clínica  Ortodoc. Me sinto muito acolhida a cada vez que vou lá.</Comentario>
                 </div>
                 <div>
                     <Cliente src={boy2} alt="cliente numero 3" />
                     <NameCliente>Reinaldo Barros - Salvador - BA </NameCliente>
-                    <Comentario>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatum explicabo quam saepe optio sint porro necessitatibus laborum, fugit adipisci impedit officiis</Comentario>
+                    <Comentario>Quando tive um problema com meus dentes no passado, fiquei bastante preocupado, mas o pessoal da Ortodoc foram muito receptivos comigo. Desde dessa época sempre faço uma visitinha, pois sei que lá serem bem acolhido.</Comentario>
                 </div>
             </Section>
         </Container>
