@@ -1,6 +1,5 @@
 import React from 'react';
 import { colorPrimary } from '../../../variaveis';
-import { Imagem } from './Section01';
 import imagem02 from "../../../assets/img/dentist-doing-a-check-up-on-the-patient-min.jpg"
 import styled from 'styled-components';
 
@@ -36,7 +35,11 @@ const NameCLinica = styled.span`
     font-family: 'Poppins', sans-serif;
 
 `
+export const Imagem = styled.img`
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
 
+`
 
 const Section02 = () => {
     return (

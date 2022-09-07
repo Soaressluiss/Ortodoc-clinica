@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from '../../../assets/img/portrait-of-smiling-dentist-standing-with-arms-crossed-with-her-colleague-min.jpg'
 import { colorPrimary } from '../../../variaveis';
+import Carrosel from '../../Header/Carrosel';
 
 const Section = styled.section`
     display: flex;
@@ -50,11 +51,7 @@ const Btn = styled.button`
     }
 
 `
-export const Imagem = styled.img`
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px black;
 
-`
 
 const Section01 = () => {
 
@@ -67,9 +64,7 @@ const Section01 = () => {
                     mudando sorrisos e vidas! </Mensagem>
                 <Btn> Saiba mais!</Btn>
             </div>
-            <Imagem src={Image}
-                alt="imagem dos dentistas da clinica"
-                width='40%' />
+            <Carrosel/>
         </Section>
     )
 }

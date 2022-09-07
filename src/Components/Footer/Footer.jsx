@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import logo from "../../assets/img/logo.png"
 import { colorPrimary, colorSecundary } from '../../variaveis';
-import { BsFacebook, BsFillHouseDoorFill, BsGlobe2, BsInstagram, BsTelephoneFill, BsTwitter, BsWhatsapp } from "react-icons/bs"
+import { BsFacebook, BsFillHouseDoorFill, BsGlobe2, BsHeart, BsInstagram, BsTelephoneFill, BsTwitter, BsWhatsapp } from "react-icons/bs"
 import { FaReact } from "react-icons/fa";
 
 const Wrapper = styled.footer`
@@ -95,7 +95,6 @@ const Information = styled.div`
     
     svg{
         font-size: 1.8rem;
-        color:${colorPrimary};
     }
 `
 const Footer = () => {
@@ -105,9 +104,9 @@ const Footer = () => {
                 <SocialMedias>
                     <p>Nos encontre em nossas redes sociais</p>
                     <ul>
-                        <li> <a href="/"> {<BsFacebook/>}</a> </li>
-                        <li> <a href="/"> {<BsInstagram/>}</a> </li>
-                        <li> <a href="/"> {<BsTwitter/>}</a> </li>
+                        <li> <a href="/"> {<BsFacebook style={{ color: "#4267B2" }} />}</a> </li>
+                        <li> <a href="/"> {<BsInstagram style={{ color: "#F56040" }} />}</a> </li>
+                        <li> <a href="/"> {<BsTwitter style={{ color: "#1DA1F2" }} />}</a> </li>
 
                     </ul>
                 </SocialMedias>
@@ -140,7 +139,7 @@ const Footer = () => {
             <Information>
                 <h4>Ortodoc 2022 &copy; todos direitos reservados </h4>
                 <p>Feito com</p>
-                <FaReact />
+                <FaReact style={{ color: `${colorPrimary}` }} />
             </Information>
         </>
     )
