@@ -1,8 +1,9 @@
 import React from 'react';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import styled from 'styled-components';
-import Image from '../../../assets/img/portrait-of-smiling-dentist-standing-with-arms-crossed-with-her-colleague-min.jpg'
 import { colorPrimary } from '../../../variaveis';
 import Carrosel from '../../Header/Carrosel';
+import "animate.css/animate.min.css";
 
 const Section = styled.section`
     display: flex;
@@ -10,7 +11,7 @@ const Section = styled.section`
     align-items: center;
     padding: 0 1.2rem;
     gap: 10rem;
-    margin-top: 8.5rem;
+    margin-top: 10rem;
 `
 
 const TittlePrincipal = styled.h2`
@@ -44,18 +45,18 @@ const Btn = styled.button`
     }
 
 `
-
-
 const Section01 = () => {
 
     return (
         <Section>
+            <AnimationOnScroll animateIn='animate__slideInLeft'>
             <div>
                 <TittlePrincipal> Ortodoc </TittlePrincipal>
                 <Mensagem>Desde de 2005 atendendo você e sua família com muito amor e cuidado,
                     mudando sorrisos e vidas! </Mensagem>
                 <Btn> Saiba mais!</Btn>
             </div>
+            </AnimationOnScroll>
             <Carrosel/>
         </Section>
     )

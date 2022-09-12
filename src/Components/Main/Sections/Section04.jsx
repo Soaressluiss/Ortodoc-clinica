@@ -4,12 +4,15 @@ import boy1 from "../../../assets/img/boy1.jpg"
 import girl from "../../../assets/img/girl.jpg"
 import boy2 from "../../../assets/img/boy2.jpg"
 import styled from 'styled-components';
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 
 const Container = styled.section`
     display: flex;
     flex-direction:column;
     justify-content: center;
-    margin: 1rem 4rem;
+    margin: 5rem 4rem;
     h2{
         margin: 1rem auto;
         color: ${colorPrimary};
@@ -57,26 +60,28 @@ const Cliente = styled.img`
 
 const Section04 = () => {
     return (
-        <Container>
-            <h2> Veja algumas avaliações de nossos clientes</h2>
-            <Section>
-                <div>
-                    <Cliente src={boy1} alt="cliente numero 1" />
-                    <NameCliente>Pedro Carlos Sobrinho - Niterói - RJ</NameCliente>
-                    <Comentario>Com minha vida corrida, dificilmente sobra um tempinho para ir ao dentista, mas com várias filiais da Ortodoc na minha cidade não preciso me preocupar em perder tempo ao sair de casa. Obrigado Ortodoc! :)</Comentario>
-                </div>
-                <div>
-                    <Cliente src={girl} alt="cliente numero 2" />
-                    <NameCliente>Ana Clara Fonseca - São Paulo - SP</NameCliente>
-                    <Comentario>Gosto bastante das instalações da clínica, sempre levo meu filho para avaliar como seus dentes estão, sempre fui muito bem recebida  por toda a equipe da clínica  Ortodoc. Me sinto muito acolhida a cada vez que vou lá.</Comentario>
-                </div>
-                <div>
-                    <Cliente src={boy2} alt="cliente numero 3" />
-                    <NameCliente>Reinaldo Barros - Salvador - BA </NameCliente>
-                    <Comentario>Quando tive um problema com meus dentes no passado, fiquei bastante preocupado, mas o pessoal da Ortodoc foram muito receptivos comigo. Desde dessa época sempre faço uma visitinha, pois sei que lá serem bem acolhido.</Comentario>
-                </div>
-            </Section>
-        </Container>
+        <AnimationOnScroll animateIn='animate__slideInUp'>
+            <Container>
+                <h2> Veja algumas avaliações de nossos clientes</h2>
+                <Section>
+                    <div>
+                        <Cliente src={boy1} alt="cliente numero 1" />
+                        <NameCliente>Pedro Carlos Sobrinho - Niterói - RJ</NameCliente>
+                        <Comentario>Com minha vida corrida, dificilmente sobra um tempinho para ir ao dentista, mas com várias filiais da Ortodoc na minha cidade não preciso me preocupar em perder tempo ao sair de casa. Obrigado Ortodoc! :)</Comentario>
+                    </div>
+                    <div>
+                        <Cliente src={girl} alt="cliente numero 2" />
+                        <NameCliente>Ana Clara Fonseca - São Paulo - SP</NameCliente>
+                        <Comentario>Gosto bastante das instalações da clínica, sempre levo meu filho para avaliar como seus dentes estão, sempre fui muito bem recebida  por toda a equipe da clínica  Ortodoc. Me sinto muito acolhida a cada vez que vou lá.</Comentario>
+                    </div>
+                    <div>
+                        <Cliente src={boy2} alt="cliente numero 3" />
+                        <NameCliente>Reinaldo Barros - Salvador - BA </NameCliente>
+                        <Comentario>Quando tive um problema com meus dentes no passado, fiquei bastante preocupado, mas o pessoal da Ortodoc foram muito receptivos comigo. Desde dessa época sempre faço uma visitinha, pois sei que lá serem bem acolhido.</Comentario>
+                    </div>
+                </Section>
+            </Container>
+        </AnimationOnScroll>
     )
 }
 

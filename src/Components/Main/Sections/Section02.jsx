@@ -2,9 +2,11 @@ import React from 'react';
 import { colorPrimary } from '../../../variaveis';
 import imagem02 from "../../../assets/img/dentist-doing-a-check-up-on-the-patient-min.jpg"
 import styled from 'styled-components';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import "animate.css/animate.min.css";
 
 const Section = styled.div`
-    margin: 6rem 3.5rem;
+    margin: 9rem 3.5rem;
     display: flex;
     gap: 2rem;
     align-items: center;
@@ -45,14 +47,19 @@ export const Imagem = styled.img`
 const Section02 = () => {
     return (
         <Section>
-            <Imagem src={imagem02}
-                alt="dentista e paciente fazendo tratamento"
-                width="40%" />
-            <Infos>
-                <Title>Sempre com os melhores profissonais para atende-lo.</Title>
-                <Msg> Com mais de 10 anos de experiência no mercado em todas as áreas da ortodontia, a <NameCLinica>ORTODOC</NameCLinica> possui profissionais altamente qualificados para cuidar melhor do seu sorriso e da sua família.</Msg>
-                <Msg> venha nos conhecer e marcar uma avaliação.</Msg>
-            </Infos>
+            <AnimationOnScroll animateIn='animate__fadeInLeft'>
+                <Imagem src={imagem02}
+                    alt="dentista e paciente fazendo tratamento"
+                    width="90%" />
+            </AnimationOnScroll>
+
+            <AnimationOnScroll animateIn='animate__fadeInRight'>
+                <Infos>
+                    <Title>Sempre com os melhores profissonais para atende-lo.</Title>
+                    <Msg> Com mais de 10 anos de experiência no mercado em todas as áreas da ortodontia, a <NameCLinica>ORTODOC</NameCLinica> possui profissionais altamente qualificados para cuidar melhor do seu sorriso e da sua família.</Msg>
+                    <Msg> venha nos conhecer e marcar uma avaliação.</Msg>
+                </Infos>
+            </AnimationOnScroll>
         </Section>
 
 

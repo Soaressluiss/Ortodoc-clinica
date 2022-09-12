@@ -5,14 +5,17 @@ import aparelho from "../../../assets/icons/aparelho.png"
 import clareamento from "../../../assets/icons/clareamento.png"
 import implante from "../../../assets/icons/implante.png"
 import styled from 'styled-components';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import "animate.css/animate.min.css";
 
 const Container = styled.section`
     display: flex;
     flex-direction: column;
     align-content:center;
+    margin-top: 10rem;
 `
 const Tittle = styled.h2`
-    margin: 1rem auto;
+    margin: 0 auto;
     color: ${colorPrimary};
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
@@ -50,39 +53,41 @@ const Tratamentos = styled.article`
 
 const Section03 = () => {
     return (
-        <Container>
-            <Tittle>Todo os tratamentos e cuidados para o seu sorriso.</Tittle>
-            <Wrapper>
-                <Tratamentos>
-                    <img src={checapes}
-                        alt="implante"
-                        width="15%" />
-                    <h3> Check Ups </h3>
-                    <p>Ir a um dentista geral é um tipo de cuidado do qual não dá para abrir mão, pois esse profissional está capacitado para avaliar desde a aparência até o estado da estrutura dos dentes e a estrutura óssea da face.</p>
-                </Tratamentos>
-                <Tratamentos>
-                    <img src={aparelho}
-                        alt="aparelho"
-                        width="15%" />
-                    <h3> Aparelho Dentário </h3>
-                    <p>É um dispositivo que estimula os movimentos dos dentes. O objetivo dessa movimentação é corrigir a posição dos dentes na arcada dentária, sempre que uma pessoa desenvolve má formação nas estruturas bucais e/ou faciais.</p>
-                </Tratamentos>
-                <Tratamentos>
-                    <img src={clareamento}
-                        alt="clareamento"
-                        width="15%" />
-                    <h3> Clareamento </h3>
-                    <p>O clareamento dental é uma microlimpeza da estrututura do dente. Por causa de pigmentos externos, com o passar do tempo, o dente fica com uma cor mais amarelada. Seu tratamento é indicado para quem busca um belo sorriso.</p>
-                </Tratamentos>
-                <Tratamentos>
-                    <img src={implante}
-                        alt="implante"
-                        width="15%" />
-                    <h3> Implantes </h3>
-                    <p>O implante dentário é um procedimento em que um pino de titânio é utilizado para substituir a raiz do dente. Ele é fixado ao osso por meio de uma cirurgia e, após a integração óssea, é feita a colocação da prótese definitiva.</p>
-                </Tratamentos>
-            </Wrapper>
-        </Container>
+        <AnimationOnScroll animateIn='animate__slideInDown'>
+            <Container>
+                <Tittle>Todo os tratamentos e cuidados para o seu sorriso.</Tittle>
+                <Wrapper>
+                    <Tratamentos>
+                        <img src={checapes}
+                            alt="implante"
+                            width="15%" />
+                        <h3> Check Ups </h3>
+                        <p>Ir a um dentista geral é um tipo de cuidado do qual não dá para abrir mão, pois esse profissional está capacitado para avaliar desde a aparência até o estado da estrutura dos dentes e a estrutura óssea da face.</p>
+                    </Tratamentos>
+                    <Tratamentos>
+                        <img src={aparelho}
+                            alt="aparelho"
+                            width="15%" />
+                        <h3> Aparelho Dentário </h3>
+                        <p>É um dispositivo que estimula os movimentos dos dentes. O objetivo dessa movimentação é corrigir a posição dos dentes na arcada dentária, sempre que uma pessoa desenvolve má formação nas estruturas bucais e/ou faciais.</p>
+                    </Tratamentos>
+                    <Tratamentos>
+                        <img src={clareamento}
+                            alt="clareamento"
+                            width="15%" />
+                        <h3> Clareamento </h3>
+                        <p>O clareamento dental é uma microlimpeza da estrututura do dente. Por causa de pigmentos externos, com o passar do tempo, o dente fica com uma cor mais amarelada. Seu tratamento é indicado para quem busca um belo sorriso.</p>
+                    </Tratamentos>
+                    <Tratamentos>
+                        <img src={implante}
+                            alt="implante"
+                            width="15%" />
+                        <h3> Implantes </h3>
+                        <p>O implante dentário é um procedimento em que um pino de titânio é utilizado para substituir a raiz do dente. Ele é fixado ao osso por meio de uma cirurgia e, após a integração óssea, é feita a colocação da prótese definitiva.</p>
+                    </Tratamentos>
+                </Wrapper>
+            </Container>
+        </AnimationOnScroll>
     )
 }
 

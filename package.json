@@ -9,6 +9,7 @@
     "animate.css": "^4.1.1",
     "components": "^0.1.0",
     "react": "^18.2.0",
+    "react-animation-on-scroll": "^5.1.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",

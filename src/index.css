@@ -4,6 +4,9 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  background-image: url(./assets/img/pattern.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
 }
 body, html {
