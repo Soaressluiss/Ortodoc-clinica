@@ -12,14 +12,23 @@ const Container = styled.section`
     display: flex;
     flex-direction: column;
     align-content:center;
-    margin-top: 10rem;
+    margin-top: 7rem;
+
+    @media screen and (max-width: 768px){
+    margin-top: 3rem;
+    }
 `
 const Tittle = styled.h2`
     margin: 0 auto;
     color: ${colorPrimary};
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.8rem;
+
+@media screen and (max-width: 768px){
+    font-size: 1.5rem;
+    margin: 0 auto;
+    }
 
     `
 const Wrapper = styled.div`
@@ -28,7 +37,10 @@ const Wrapper = styled.div`
     text-align: justify;
     flex-wrap:nowrap;
     margin: 2rem 2.3rem;
-  
+
+@media screen and (max-width: 768px){
+    flex-direction: column;
+    }
 `
 const Tratamentos = styled.article`
     -webkit-box-shadow: 3px 11.5px 17.5px 5px #ddd;
@@ -39,9 +51,16 @@ const Tratamentos = styled.article`
     border-radius: 10px;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 768px){
+        img {
+            width: 4%;
+        }
+    }
     h3{
         color: ${colorPrimary};
         font-family: 'Heebo', sans-serif;
+    
     }
     p{
         color: ${colorSecundary};
@@ -53,7 +72,7 @@ const Tratamentos = styled.article`
 
 const Section03 = () => {
     return (
-        <AnimationOnScroll animateIn='animate__slideInDown'>
+        <AnimationOnScroll animateIn='animate__slideInUp'>
             <Container>
                 <Tittle>Todo os tratamentos e cuidados para o seu sorriso.</Tittle>
                 <Wrapper>

@@ -1,0 +1,10 @@
+.carrosel_style {
+    width: 90%;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .carrosel_style {
+        width: 125%;
+    }
+}

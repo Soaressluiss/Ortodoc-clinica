@@ -20,6 +20,9 @@ const Container = styled.section`
         font-size: 2rem;
         font-family: 'Poppins', sans-serif;
 
+        @media screen and (max-width: 768px){
+            font-size: 1.5rem;
+        }
 
     }
 `
@@ -27,6 +30,10 @@ const Section = styled.section`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+    }
     div{
         display: flex;
         flex-direction: column;
@@ -52,6 +59,7 @@ const Comentario = styled.p`
     font-family: 'Noto Sans JP', sans-serif;
     text-align: justify;
     font-size: 1.1rem;
+
 `
 const Cliente = styled.img`
     width: 40%;

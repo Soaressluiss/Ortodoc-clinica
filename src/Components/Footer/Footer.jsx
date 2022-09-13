@@ -55,9 +55,12 @@ const LogoAndMsg = styled.div`
         font-family: 'Noto Sans JP', sans-serif;
         font-size:1.1rem;
         text-align: justify;
+        @media screen and (max-width: 768px){
+            font-size: .9rem;
+        }
     }
     img{
-        width:70%
+        width:70%;
     }
 
 `
@@ -80,6 +83,10 @@ const ServicoContainer = styled.div`
         list-style: none;
         padding: .3rem 0;
         text-decoration: none;
+        @media screen and (max-width: 768px){
+            font-size: .9rem;
+            margin: 0;
+        }
     }
     a:hover {
         color: #08d4f8

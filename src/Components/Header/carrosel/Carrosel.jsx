@@ -1,28 +1,24 @@
 import React from 'react';
-import img2 from "../../assets/carrosel/consultorio.jpg"
-import img3 from "../../assets/carrosel/dentista-atendendo.jpg"
-import img1 from "../../assets/carrosel/dentistas-da-clinica.jpg"
-import img4 from "../../assets/carrosel/atendemos-publico-infantil.jpg"
+import img2 from "../../../assets/carrosel/consultorio.jpg"
+import img3 from "../../../assets/carrosel/dentista-atendendo.jpg"
+import img1 from "../../../assets/carrosel/dentistas-da-clinica.jpg"
+import img4 from "../../../assets/carrosel/atendemos-publico-infantil.jpg"
 import { Swiper, SwiperSlide } from "swiper/react";
+import "./carrosel.css"
 
-import { Autoplay, Navigation, Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
+
 
 
 const Carrosel = () => {
     return (
         <Swiper
-            modules={[Pagination, Navigation, Autoplay]}
+            modules={[Pagination, Autoplay]}
             pagination={true}
             autoplay={true}
-            navigation={true}
-            style={
-                {
-                    width: "85%",
-                    borderRadius: "20px",
-                }}
+            className="carrosel_style"
         >
             <ul>
                 <SwiperSlide>

@@ -6,10 +6,14 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "animate.css/animate.min.css";
 
 const Section = styled.div`
-    margin: 9rem 3.5rem;
+    margin: 8rem 1rem;
     display: flex;
     gap: 2rem;
     align-items: center;
+@media screen and (max-width: 768px){
+        margin-top: 2rem;
+        gap: 0rem;
+    }
 `
 const Infos = styled.div`
     text-align: justify;
@@ -20,14 +24,22 @@ const Title = styled.p`
     font-size: 1.7rem;
     font-family: 'Poppins', sans-serif;
     margin-bottom: .8rem;
+@media screen and (max-width: 768px){
+    font-size: 1rem;
+    margin-bottom: .4rem;
+    }
 
 `
 const Msg = styled.p`
     color: ${colorPrimary};
     font-size: 1.2rem;
     font-weight: bold;
-    margin-top: 1.8prem;
+    margin-top: 1.8rem;
     font-family: 'Noto Sans JP', sans-serif;
+@media screen and (max-width: 768px){
+    font-size: .9rem;
+    margin-top: 1.2rem;
+    }
 
 `
 const NameCLinica = styled.span`
@@ -35,6 +47,9 @@ const NameCLinica = styled.span`
     font-size: 1.2rem;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+@media screen and (max-width: 768px){
+    font-size: .7rem;
+    }
     
 `
 

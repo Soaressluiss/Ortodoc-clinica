@@ -15,9 +15,16 @@ const Nav = styled.nav`
     align-items: center;
     z-index: 9999;
     img {
-        width:30%;
-        padding: .8rem;
+        width:14rem;
+        padding:  0 .8rem;
     }
+
+@media screen and (max-width: 768px) {
+    img{
+        width: 10.5rem;
+    }
+    
+}
 `
 const List = styled.ul`
     display: flex;
@@ -35,13 +42,18 @@ const List = styled.ul`
     .itemMenu:hover{
     color:#167fe7;
 }
+@media screen and (max-width: 768px){
+    .itemMenu{
+        font-size: 1rem;
+    }
+}
     `
 
 
 const Header = () => {
     return (
         <Nav>
-            <Link to={'/'}> <img src={logo}  alt="logo do site" /> </Link> 
+            <Link to={'/'}> <img src={logo} alt="logo do site" /> </Link>
             <List>
                 <Link className='itemMenu' to={'/'}>Home</Link>
                 <Link className='itemMenu' to={'/sobre'}>Sobre</Link>
