@@ -23,7 +23,7 @@ const Tittle = styled.h2`
     color: ${colorPrimary};
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
 
 @media screen and (max-width: 768px){
     font-size: 1.5rem;

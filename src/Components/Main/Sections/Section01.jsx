@@ -11,18 +11,19 @@ const Section = styled.section`
     gap: 4rem;
     margin-top: 10rem;
     @media screen and (max-width: 768px){
+        gap: 2rem;
     }
 `
 
 const TittlePrincipal = styled.h2`
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-family: 'Poppins', sans-serif;
     margin:  0;
     font-weight: bold;
     color: ${colorPrimary};
 
 @media screen and (max-width: 768px){
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 `
 const Mensagem = styled.p`
@@ -31,7 +32,7 @@ const Mensagem = styled.p`
     margin:0;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 
 @media screen and (max-width: 768px){
     font-size: 1.2rem ;
@@ -49,8 +50,10 @@ const Btn = styled.button`
     &:hover {
         background-color: ${colorPrimary};
         transition: 1s;
-
     }
+`
+const DivCarrosel = styled.div`
+    width: 50vw;
 
 `
 const Section01 = () => {
@@ -63,7 +66,9 @@ const Section01 = () => {
                     mudando sorrisos e vidas! </Mensagem>
                 <Btn> Saiba mais!</Btn>
             </div>
+            <DivCarrosel>
             <Carrosel />
+            </DivCarrosel>
         </Section>
     )
 }

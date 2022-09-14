@@ -8,7 +8,7 @@ import "animate.css/animate.min.css";
 const Section = styled.div`
     margin: 8rem 1rem;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
 @media screen and (max-width: 768px){
         margin-top: 2rem;
@@ -21,9 +21,10 @@ const Infos = styled.div`
 const Title = styled.p`
     color: #4A9AE9;
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-family: 'Poppins', sans-serif;
     margin-bottom: .8rem;
+
 @media screen and (max-width: 768px){
     font-size: 1rem;
     margin-bottom: .4rem;
@@ -32,7 +33,7 @@ const Title = styled.p`
 `
 const Msg = styled.p`
     color: ${colorPrimary};
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     margin-top: 1.8rem;
     font-family: 'Noto Sans JP', sans-serif;
