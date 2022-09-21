@@ -3,6 +3,8 @@ import styled from "styled-components"
 import logo from "../../assets/img/logo-white.svg"
 import { Link } from "react-router-dom"
 import { colorSecundary } from '../../variaveis';
+import MenuHamburguer from './Menu/MenuHamburguer';
+import ItensMenu from './ItensMenu';
 
 
 const Nav = styled.nav`
@@ -18,50 +20,28 @@ const Nav = styled.nav`
         width:14rem;
         padding:  0 .8rem;
     }
+    svg {
+        font-size: 2rem;
+        color: white;
+    }
 
 @media screen and (max-width: 768px) {
     img{
         width: 10.5rem;
-    }
-    
+    }  
 }
 `
-const List = styled.ul`
-    display: flex;
-
-    .itemMenu{
-    text-decoration:  none;
-    font-size: 1.1rem;
-    padding: 1rem;
-    color: #4a9ae9;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    }
-    .itemMenu:hover{
-    color:#167fe7;
-}
-@media screen and (max-width: 768px){
-    .itemMenu{
-        font-size: 1rem;
-    }
-}
-    `
-
 
 const Header = () => {
     return (
-        <Nav>
+    
+        
+        <Nav >
             <Link to={'/'}> <img src={logo} alt="logo do site" /> </Link>
-            <List>
-                <Link className='itemMenu' to={'/'}>Home</Link>
-                <Link className='itemMenu' to={'/sobre'}>Sobre</Link>
-                <Link className='itemMenu' to={'/blog'}>Blog</Link>
-                <Link className='itemMenu' to={'/galeria'}>Galeria</Link>
-                <Link className='itemMenu' to={'/contato'}>Contato</Link>
-            </List>
-        </Nav>
+            <ItensMenu />
+            <MenuHamburguer />
+
+        </Nav> 
     )
 }
 

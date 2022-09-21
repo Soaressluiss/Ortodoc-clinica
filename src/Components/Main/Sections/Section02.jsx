@@ -10,9 +10,12 @@ const Section = styled.div`
     display: flex;
     gap: 1rem;
     align-items: center;
+    background-color: red;
 @media screen and (max-width: 768px){
         margin-top: 2rem;
         gap: 0rem;
+        flex-direction: column;
+    
     }
 `
 const Infos = styled.div`
@@ -57,7 +60,9 @@ const NameCLinica = styled.span`
 export const Imagem = styled.img`
     border-radius: 10px;
     box-shadow: 1px 1px 5px black;
-
+    @media screen and (max-width: 768px){
+        width: 80%;
+    }
 `
 
 const Section02 = () => {

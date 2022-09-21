@@ -10,8 +10,14 @@ const Section = styled.section`
     padding: 0 1.2rem;
     gap: 4rem;
     margin-top: 10rem;
-    @media screen and (max-width: 768px){
-        gap: 2rem;
+
+@media screen and (max-width: 768px){
+        gap: 2rem;  
+        flex-direction: column-reverse;
+    div{
+        text-align:center;
+    }
+
     }
 `
 
@@ -53,7 +59,10 @@ const Btn = styled.button`
     }
 `
 const DivCarrosel = styled.div`
-    width: 50vw;
+    width: 50%;
+    @media screen and (max-width: 768px){
+        width: 80%;
+    }
 
 `
 const Section01 = () => {
