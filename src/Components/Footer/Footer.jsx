@@ -2,7 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import logo from "../../assets/img/logo-blue.svg"
 import { colorPrimary, colorSecundary } from '../../variaveis';
-import { BsFacebook, BsFillHouseDoorFill, BsGlobe2, BsInstagram, BsTelephoneFill, BsTwitter, BsWhatsapp } from "react-icons/bs"
+import {
+    BsFacebook,
+    BsFillHouseDoorFill,
+    BsGlobe2,
+    BsInstagram,
+    BsTelephoneFill,
+    BsTwitter,
+    BsWhatsapp
+} from "react-icons/bs"
 import { FaReact } from "react-icons/fa";
 
 const Wrapper = styled.footer`
@@ -12,10 +20,18 @@ const Wrapper = styled.footer`
     grid-template-areas: " r r r "
                         " l s  c "
                         "  i i i ";
-    margin: 8rem 2rem 4rem 2rem;
-    
+    margin: 1rem 2rem 4rem 2rem;  
     border-top: 2px solid ${colorSecundary};
     border-bottom: 2px solid ${colorSecundary};
+
+    @media screen and (max-width: 428px){
+    grid-template-areas: 
+                        "l l l"
+                        "s s s"
+                        "c c c"
+                        "r r r"
+                        "i i i ";
+}
 `
 const SocialMedias = styled.div`
     grid-area: r;
@@ -34,6 +50,8 @@ const SocialMedias = styled.div`
         display: flex;
         gap: 2rem;
         list-style: none;
+        padding: 0;
+        
     }
     svg{
         color: ${colorSecundary};
@@ -42,6 +60,11 @@ const SocialMedias = styled.div`
     svg:hover{
         color: ${colorPrimary};
         transition: 1s;
+    }
+    @media screen and (max-width: 428px){
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 `
 const LogoAndMsg = styled.div`
@@ -61,6 +84,12 @@ const LogoAndMsg = styled.div`
     }
     img{
         width:70%;
+        @media screen and (max-width: 428px){
+            margin-top: .5rem;
+        }
+    }
+    @media screen and (max-width: 428px){
+        align-items: center;
     }
 
 `
@@ -69,12 +98,17 @@ const ServicoContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     h3{
         font-size: 1.3rem;
         color: ${colorPrimary};
         text-transform: uppercase;
         font-weight: bold;
         font-family: 'Heebo', sans-serif;
+
+        @media screen and (max-width: 428px){
+            margin: 0;
+        }
     }
     li , a{
         font-family: 'Noto Sans JP', sans-serif;
@@ -85,7 +119,6 @@ const ServicoContainer = styled.div`
         text-decoration: none;
         @media screen and (max-width: 768px){
             font-size: .9rem;
-            margin: 0;
         }
     }
     a:hover {
@@ -105,10 +138,21 @@ const Information = styled.div`
         color: ${colorSecundary};
         font-weight: bold;
         font-family: 'Heebo', sans-serif;
+        @media screen and (max-width: 428px){
+            margin: 0;
+        }
     }
     
-    svg{
+    >svg{
         font-size: 1.8rem;
+        @media screen and (max-width: 428px){
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 428px){
+        flex-direction: column;
+
     }
 `
 const Footer = () => {

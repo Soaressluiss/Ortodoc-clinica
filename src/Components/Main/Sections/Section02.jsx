@@ -10,11 +10,11 @@ const Section = styled.div`
     display: flex;
     gap: 1rem;
     align-items: center;
-    background-color: red;
 @media screen and (max-width: 768px){
-        margin-top: 2rem;
         gap: 0rem;
         flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
     
     }
 `
@@ -29,7 +29,7 @@ const Title = styled.p`
     margin-bottom: .8rem;
 
 @media screen and (max-width: 768px){
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-bottom: .4rem;
     }
 
@@ -41,7 +41,7 @@ const Msg = styled.p`
     margin-top: 1.8rem;
     font-family: 'Noto Sans JP', sans-serif;
 @media screen and (max-width: 768px){
-    font-size: .9rem;
+    font-size: 1.2rem;
     margin-top: 1.2rem;
     }
 
@@ -52,7 +52,7 @@ const NameCLinica = styled.span`
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
 @media screen and (max-width: 768px){
-    font-size: .7rem;
+    font-size: .8rem;
     }
     
 `
@@ -61,7 +61,7 @@ export const Imagem = styled.img`
     border-radius: 10px;
     box-shadow: 1px 1px 5px black;
     @media screen and (max-width: 768px){
-        width: 80%;
+        width: 100%;
     }
 `
 

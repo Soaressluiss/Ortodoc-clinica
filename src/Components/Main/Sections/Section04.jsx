@@ -12,7 +12,7 @@ const Container = styled.section`
     display: flex;
     flex-direction:column;
     justify-content: center;
-    margin: 5rem 4rem;
+    margin: 5rem 1rem;
     h2{
         margin: 1rem auto;
         color: ${colorPrimary};
@@ -22,6 +22,10 @@ const Container = styled.section`
 
         @media screen and (max-width: 768px){
             font-size: 1.5rem;
+        }
+        @media screen and (max-width: 425px){
+            font-size: 1.4rem;
+            text-align: center;
         }
 
     }
@@ -34,6 +38,7 @@ const Section = styled.section`
     @media screen and (max-width: 768px){
         flex-direction: column;
     }
+
     div{
         display: flex;
         flex-direction: column;
@@ -47,11 +52,13 @@ const Section = styled.section`
         border-radius: 10px; 
     }
     `
+    
 const NameCliente = styled.p`
     color: ${colorPrimary};
     font-size: 1.2rem;
     font-family: 'Heebo', sans-serif;
     font-weight: bold;
+    text-align: center;
 `
 
 const Comentario = styled.p`
@@ -59,6 +66,9 @@ const Comentario = styled.p`
     font-family: 'Noto Sans JP', sans-serif;
     text-align: justify;
     font-size: 1.1rem;
+    @media screen and (max-width: 425px){
+   font-size: .9rem;
+}
 
 `
 const Cliente = styled.img`

@@ -57,11 +57,17 @@ const Btn = styled.button`
         background-color: ${colorPrimary};
         transition: 1s;
     }
+    @media screen and (max-width: 768px){
+        margin-bottom: 2rem;
+    }
 `
 const DivCarrosel = styled.div`
-    width: 50%;
+        width: 50%;
     @media screen and (max-width: 768px){
         width: 80%;
+    }
+    @media screen and (max-width: 425px){
+        width: 100%;
     }
 
 `

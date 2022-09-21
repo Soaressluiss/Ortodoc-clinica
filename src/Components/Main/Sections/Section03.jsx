@@ -24,6 +24,7 @@ const Tittle = styled.h2`
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 2.3rem;
+    text-align: center;
 
 @media screen and (max-width: 768px){
     font-size: 1.5rem;
@@ -40,6 +41,7 @@ const Wrapper = styled.div`
 
 @media screen and (max-width: 768px){
     flex-direction: column;
+    margin: 2rem 1rem;
     }
 `
 const Tratamentos = styled.article`
@@ -56,6 +58,11 @@ const Tratamentos = styled.article`
         img {
             width: 4%;
         }
+        @media screen and (max-width: 425px){
+        img {
+        width: 15%;
+    }
+}    
     }
     h3{
         color: ${colorPrimary};
