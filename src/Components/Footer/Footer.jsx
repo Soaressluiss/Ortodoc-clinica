@@ -140,6 +140,7 @@ const Information = styled.div`
         font-family: 'Heebo', sans-serif;
         @media screen and (max-width: 428px){
             margin: 0;
+            text-align: center;
         }
     }
     

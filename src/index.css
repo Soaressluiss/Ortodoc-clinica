@@ -1,16 +1,11 @@
-body {
+body , html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  background-image: url(./assets/img/pattern.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
-body, html {
   height: 100%;
+  background:url(./assets/img/pattern.svg);
   scroll-behavior: smooth;
 }
 

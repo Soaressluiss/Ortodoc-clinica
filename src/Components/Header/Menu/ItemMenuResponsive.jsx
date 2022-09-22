@@ -6,7 +6,6 @@ const List = styled.ul`
 display: flex;
 
 @media screen and (max-width: 768px){
-    /* display: none; */
     flex-direction: column;
 }
 
@@ -25,13 +24,10 @@ color:#167fe7;
 }
 @media screen and (max-width: 768px){
 .itemMenu{
-    font-size: 1rem;
-   
+    font-size: 1rem;   
 }
 }
-/* @media screen and (max-width: 425px){
-display: none;
-} */
+
 `
 const ItensMenuResponsive = () => {
     return (

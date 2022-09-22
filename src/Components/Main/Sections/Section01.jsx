@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { colorPrimary } from '../../../variaveis';
 import Carrosel from '../../Header/carrosel/Carrosel';
 
+
 const Section = styled.section`
     display: flex;
     justify-content: space-evenly;
@@ -10,6 +11,7 @@ const Section = styled.section`
     padding: 0 1.2rem;
     gap: 4rem;
     margin-top: 10rem;
+
 
 @media screen and (max-width: 768px){
         gap: 2rem;  
