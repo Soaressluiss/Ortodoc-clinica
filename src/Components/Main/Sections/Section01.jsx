@@ -11,7 +11,9 @@ const Section = styled.section`
     padding: 0 1.2rem;
     gap: 4rem;
     margin-top: 10rem;
-
+    >div{
+        background-color: white;
+    }
 
 @media screen and (max-width: 768px){
         gap: 2rem;  

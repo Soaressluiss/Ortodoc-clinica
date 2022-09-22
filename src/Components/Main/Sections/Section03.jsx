@@ -49,6 +49,7 @@ const Tratamentos = styled.article`
     -moz-box-shadow: 3px 11.5px 17.5px 5px #ddd;
     box-shadow: 3px 11.5px 17.5px 5px #ddd;
     display: flex;
+    background-color: white;
     padding: 0.6rem;
     border-radius: 10px;
     flex-direction: column;
@@ -58,7 +59,7 @@ const Tratamentos = styled.article`
         img {
             width: 4%;
         }
-        @media screen and (max-width: 425px){
+        @media screen and (max-width: 428px){
         img {
         width: 15%;
     }

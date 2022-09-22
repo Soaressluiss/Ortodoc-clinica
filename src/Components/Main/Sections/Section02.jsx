@@ -20,6 +20,7 @@ const Section = styled.div`
 `
 const Infos = styled.div`
     text-align: justify;
+    background-color: white;
 `
 const Title = styled.p`
     color: #4A9AE9;

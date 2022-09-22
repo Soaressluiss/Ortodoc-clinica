@@ -43,6 +43,7 @@ const Section = styled.section`
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: white;
         margin: 1rem;
         -webkit-box-shadow: 3px 11.5px 17.5px 5px #ddd;
         -moz-box-shadow: 3px 11.5px 17.5px 5px #ddd;

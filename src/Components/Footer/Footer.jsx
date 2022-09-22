@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import logo from "../../assets/img/logo-blue.svg"
 import { colorPrimary, colorSecundary } from '../../variaveis';
+import ScrollToTop from "react-scroll-to-top";
 import {
     BsFacebook,
     BsFillHouseDoorFill,
@@ -9,7 +10,8 @@ import {
     BsInstagram,
     BsTelephoneFill,
     BsTwitter,
-    BsWhatsapp
+    BsWhatsapp,
+    BsArrowUpCircle
 } from "react-icons/bs"
 import { FaReact } from "react-icons/fa";
 
@@ -31,7 +33,8 @@ const Wrapper = styled.footer`
                         "c c c"
                         "r r r"
                         "i i i ";
-}
+
+    }
 `
 const SocialMedias = styled.div`
     grid-area: r;
@@ -169,6 +172,16 @@ const Footer = () => {
 
                     </ul>
                 </SocialMedias>
+
+                <ScrollToTop
+                    smooth
+                    component={<BsArrowUpCircle
+                        style={{
+                            color: "#4267B2",
+                            fontSize: '1.3rem'
+                        }} />}
+                />
+
                 <LogoAndMsg>
                     <img
                         src={logo}
