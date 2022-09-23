@@ -48,7 +48,7 @@ const Noticias = styled.section`
     font-weight: 900;
     font-size: 1.4rem;
     width: 100%;
-    background-color: #5dfcfc;
+   
     padding: .6rem 0;
     border-radius: 10px;
     text-transform: uppercase;

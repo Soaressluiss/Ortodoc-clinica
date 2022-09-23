@@ -1,11 +1,11 @@
 import React from 'react';
 import { FaTimes } from 'react-icons/fa';
 import styled from 'styled-components';
-import { colorPrimary } from '../../../variaveis';
+import { colorSecundary } from '../../../variaveis';
 import ItensMenuResponsive from './ItemMenuResponsive';
 
 const Container = styled.div`
-    background-color:${colorPrimary};
+    background-color:${colorSecundary};
     position:fixed;
     right: 0;
     top: 0;

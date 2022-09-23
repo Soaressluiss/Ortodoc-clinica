@@ -121,7 +121,7 @@ const ServicoContainer = styled.div`
         padding: .3rem 0;
         text-decoration: none;
         @media screen and (max-width: 768px){
-            font-size: .9rem;
+            font-size: 1.1rem;
         }
     }
     a:hover {

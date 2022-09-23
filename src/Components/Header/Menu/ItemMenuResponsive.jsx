@@ -13,7 +13,6 @@ display: flex;
 text-decoration:  none;
 font-size: 1.1rem;
 padding: 1rem;
-color: #4a9ae9;
 color: white;
 font-weight: bold;
 text-transform: uppercase;
@@ -36,7 +35,6 @@ const ItensMenuResponsive = () => {
             <Link className='itemMenu' to={'/'}>Home</Link>
             <Link className='itemMenu' to={'/sobre'}>Sobre</Link>
             <Link className='itemMenu' to={'/blog'}>Blog</Link>
-            <Link className='itemMenu' to={'/galeria'}>Galeria</Link>
             <Link className='itemMenu' to={'/contato'}>Contato</Link>
         </List>
     )

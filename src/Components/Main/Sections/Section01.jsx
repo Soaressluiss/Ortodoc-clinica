@@ -18,6 +18,7 @@ const Section = styled.section`
 @media screen and (max-width: 768px){
         gap: 2rem;  
         flex-direction: column-reverse;
+        margin-top: 7rem;
     div{
         text-align:center;
     }
