@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components';
 import Footer from '../Components/Footer/Footer';
 import Header from '../Components/Header/Header';
@@ -93,36 +93,48 @@ const ButtonLink = styled.button`
     }
 `
 const Blog = () => {
-
-    const [Posts, setPosts] = useState([])
-    const Url = "http://localhost:5000/noticias"
-
-    const ObterDados = async () => {
-        const dadosObtidos = await fetch(Url)
-        const dadosConvertidos = await dadosObtidos.json()
-        setPosts(dadosConvertidos)
-    }
-    useEffect(() => {
-        ObterDados()
-    }, [])
-
     return (
         <>
             <Header />
             <Noticias>
                 <h2>Notícias do Dia </h2>
                 <ul>
-                    {Posts.map((blog) =>
-                        <li key={blog.id}>
-                            <h3>{blog.title}</h3>
-                            <p>{blog.noticia}</p>
-                            <p>{blog.autor}</p>
-                            <p>{blog.date}</p>
-                            <ButtonLink>
-                                <a href={blog.link} target="_blank" rel='noreferrer'> Acesse a notícia</a>
-                            </ButtonLink>
-                        </li>
-                    )}
+                    <li>
+                        <h3>Dentes entortam na fase adulta?</h3>
+                        <p>Muito além da questão estética, dentes alinhados cumprem uma boa função na saúde da boca e do corpo de um modo geral. Entre os problemas bucais causados pelos dentes tortos está a dificuldade de mastigação, a alteração da fonética e a respiração pela boca, que ocasiona problemas na gengiva, língua e mau hálito. Para evitar esses problemas na fase adulta, é recomendável que a dentição seja corrigida ainda na infância por meio de aparelhos ortodônticos. Além disso, hoje em dia existem inúmeras opções discretas para quem deseja corrigir o sorriso depois de grandinho.</p>
+                        <p>Site Terra</p>
+                        <p>2022</p>
+                        <ButtonLink>
+                            <a href="https://www.terra.com.br/vida-e-estilo/saude/saude-bucal/saude/dentes-entortam-na-fase-adulta-entenda-como-a-denticao-pode-mudar,a2446a1a1e9b226dde475ec8b3ec011b82x56hew.html" target="_blank" rel='noreferrer'> Acesse a notícia</a>
+                        </ButtonLink>
+                    </li>
+                    <li>
+                        <h3>Fóssil de criatura que parece uma “língua com dentes” é encontrado bem preservado</h3>
+                        <p>Um fóssil encontrado em Montana, nos Estados Unidos, pertence a uma espécie de animal que se parece com um tipo de molusco que possui uma “língua com dentes” dentro de seu intestino. Segundo o artigo publicado na revista Biology Letters, a criatura estava em bom estado de conservação, algo que surpreendeu os pesquisadores. A partir das observações iniciais, os cientistas acreditam que o fóssil pertence a uma espécie de Tifloesus, que viveu durante o período Carbonífero, entre 358,9 milhões e 289,9 milhões de anos atrás. Esse espécime não foi classificado em nenhum grupo de animais, por falta de mais detalhes dos fósseis.</p>
+                        <p>Olhar Digital</p>
+                        <p>2022</p>
+                        <ButtonLink>
+                            <a href="https://olhardigital.com.br/2022/09/21/ciencia-e-espaco/fossil-de-criatura-que-parece-uma-lingua-com-dentes-e-encontrado-bem-preservado-confira/" target="_blank" rel='noreferrer'> Acesse a notícia</a>
+                        </ButtonLink>
+                    </li>
+                    <li>
+                        <h3>Aparelho invisível: vale a pena investir no tratamento odontológico ‘do futuro’?</h3>
+                        <p>Se você já foi ao dentista e recebeu a notícia que precisaria usar aparelho ortodôntico, é possível que tenha tido ressalvas a respeito. Afinal, o tratamento pode comprometer a estética do sorriso, dificultar a higienização e aumentar a frequência de visitas ao consultório. Para eliminar essas desvantagens, entretanto, é que surgiram os alinhadores estéticos. “O principal diferencial desse tratamento ortodôntico é a sua versatilidade. O alinhador invisível é removível, mais confortável e mais prático”, detalha Márcio Ramos, dentista e fundador da IRio Odontologia. Segundo ele, é possível fazer outros procedimentos dentais durante o uso dos alinhadores, o que também é um fator importante para o sucesso desse tipo de tratamento.</p>
+                        <p>Site Terra</p>
+                        <p>2022</p>
+                        <ButtonLink>
+                            <a href="https://istoe.com.br/tudo-sobre-aparelho-invisivel/" target="_blank" rel='noreferrer'> Acesse a notícia</a>
+                        </ButtonLink>
+                    </li>
+                    <li>
+                        <h3>O sorriso da rainha Elizabeth: Descubra como a família real cuida dos dentes</h3>
+                        <p>Muitos mistérios e curiosidades rondam a família real, inclusive com relação ao cuidado com seus dentes. Não à toa, a dentição dos britânicos costuma ser alvo de comentários em filmes e no imaginário popular. Segundo reportagem do El País, o estereótipo da má dentição dos ingleses tem base histórica. Até a primeira terça parte do século 20, a higiene bucal era vista como algo excêntrico e, em geral, os dentes representavam um problema do qual era melhor se livrar o mais rápido possível. Voltando ao período Tudor, registros apontam que do meio ao fim de seu reinado, Elizabeth I sofreu com dores de dente, causadas pela popularização do açúcar. Em dezembro de 1578, quando a dor parecia não melhorar, ela finalmente aceitou a extração. Após a remoção de alguns de seus dentes, Elizabeth nunca mais apareceu em público sem chumaços de algodão preenchendo os locais vazios.</p>
+                        <p>Site Terra</p>
+                        <p>2022</p>
+                        <ButtonLink>
+                            <a href="https://www.terra.com.br/vida-e-estilo/saude/saude-bucal/diversao/o-sorriso-da-rainha-elizabeth-descubra-como-a-familia-real-cuida-dos-dentes,f74ca52893f01f7153c9f1fb1cccf05f1tvdwqmb.html" target="_blank" rel='noreferrer'> Acesse a notícia</a>
+                        </ButtonLink>
+                    </li>
                 </ul>
             </Noticias>
             <Footer />
