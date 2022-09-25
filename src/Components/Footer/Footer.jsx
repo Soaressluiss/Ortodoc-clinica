@@ -11,7 +11,9 @@ import {
     BsTelephoneFill,
     BsTwitter,
     BsWhatsapp,
-    BsArrowUpCircle
+    BsArrowUpCircle,
+    BsGithub,
+    BsLinkedin
 } from "react-icons/bs"
 import { FaReact } from "react-icons/fa";
 
@@ -21,7 +23,8 @@ const Wrapper = styled.footer`
     grid-template: auto / 1fr 1fr 1fr;
     grid-template-areas: " r r r "
                         " l s  c "
-                        "  i i i ";
+                        " i i i "
+                        " d d d ";
     margin: 1rem 2rem 4rem 2rem;  
     border-top: 2px solid ${colorSecundary};
     border-bottom: 2px solid ${colorSecundary};
@@ -32,7 +35,8 @@ const Wrapper = styled.footer`
                         "s s s"
                         "c c c"
                         "r r r"
-                        "i i i ";
+                        "i i i"
+                        "d d d";
 
     }
 `
@@ -134,10 +138,57 @@ const ContatosContainer = styled(ServicoContainer)`
 const Information = styled.div`
     grid-area: i;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: .6rem;
-    h4, p{
+   
+    h4{
+        color: ${colorSecundary};
+        font-weight: bold;
+        margin: 0;
+        font-family: 'Heebo', sans-serif;
+        @media screen and (max-width: 428px){
+            text-align: center;
+        }
+    }
+`
+const ContatoDev = styled.div`
+    grid-area: d;
+    grid-template-columns: "m m"
+                            "d d";                       
+    .msg {
+        grid-area: m;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        margin-top: .7rem;
+
+        svg{
+        font-size: 2rem;       
+    }
+        
+    }
+    .dev{
+        grid-area: d;
+        display: flex;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
+        h5{
+            color: blue;
+            font-size: 1.1rem;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        svg{
+        font-size: 1.5rem;
+        cursor: pointer;
+        }
+    }
+    
+    p{
         color: ${colorSecundary};
         font-weight: bold;
         font-family: 'Heebo', sans-serif;
@@ -147,17 +198,6 @@ const Information = styled.div`
         }
     }
     
-    >svg{
-        font-size: 1.8rem;
-        @media screen and (max-width: 428px){
-            margin-bottom: 1rem;
-        }
-    }
-
-    @media screen and (max-width: 428px){
-        flex-direction: column;
-
-    }
 `
 const Footer = () => {
     return (
@@ -210,9 +250,20 @@ const Footer = () => {
             </Wrapper>
             <Information>
                 <h4> &copy; Ortodoc 2022 - todos direitos reservados </h4>
-                <p>Feito com</p>
-                <FaReact style={{ color: `${colorPrimary}` }} />
             </Information>
+
+            <ContatoDev>
+                <div className='msg'>
+                    <p>Desenvolvido  com </p>
+                    <FaReact style={{ color: `${colorPrimary}` }} />
+                </div>
+                <div className='dev'>
+                    <p>por</p>
+                    <h5>Luís Soares</h5>
+                    <a href="https://github.com/Soaressluiss" target="_blank" rel="noreferrer"> <BsGithub style={{ color: "black" }} /></a>
+                    <a href="https://www.linkedin.com/in/luis-soares-281589234/" target="_blank" rel="noreferrer"> <BsLinkedin style={{ color: "#0e76a8" }} /></a>
+                </div>
+            </ContatoDev>
         </>
     )
 }

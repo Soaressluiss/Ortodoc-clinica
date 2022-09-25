@@ -18,7 +18,7 @@ const Nav = styled.nav`
     z-index: 9999;
     img {
         width:14rem;
-        padding:  0 .8rem;
+        padding:.4rem .8rem;
     }
     svg {
         font-size: 2rem;

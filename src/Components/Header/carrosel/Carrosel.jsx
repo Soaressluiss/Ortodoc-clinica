@@ -1,7 +1,7 @@
 import React from 'react';
+import img1 from "../../../assets/carrosel/dentistas-da-clinica.jpg"
 import img2 from "../../../assets/carrosel/consultorio.jpg"
 import img3 from "../../../assets/carrosel/dentista-atendendo.jpg"
-import img1 from "../../../assets/carrosel/dentistas-da-clinica.jpg"
 import img4 from "../../../assets/carrosel/atendemos-publico-infantil.jpg"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./carrosel.css"
@@ -22,7 +22,7 @@ const Carrosel = () => {
         >
             <ul>
                 <SwiperSlide>
-                    <li><img src={img1} alt="nossas instalações" width="100%" /></li>
+                    <li><img src={img1} alt="nossas instalações" width="100%"  /></li>
                 </SwiperSlide>
                 <SwiperSlide>
                     <li><img src={img2} alt="nossos profissionais" width="100%" /></li>

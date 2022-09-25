@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Header from '../Components/Header/Header';
 import Footer from '../Components/Footer/Footer';
 import { FaTooth } from "react-icons/fa"
+import { colorPrimary, colorSecundary } from '../variaveis';
 
 
 const Section = styled.section`
@@ -64,6 +65,7 @@ const SectionContato = styled.section`
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 2rem;
         gap: 1rem;
         width: 24rem;
         @media screen and (max-width: 428px){
@@ -93,9 +95,40 @@ const SectionContato = styled.section`
             width: 14rem;
         }
     }
+    button[type=submit]{
+        background-color: ${colorPrimary};
+        border-bottom: 1rem;
+        padding: .7rem;
+        border-radius: 10px;
+        border: none;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        font-family: 'Heebo', sans-serif; 
+        color: white;
+        width: inherit;
+        font-weight: 600;
+        box-shadow: 1px 1px 4px black;
+        letter-spacing: .2rem;
+        &:hover{
+            background-color: ${colorSecundary};
+            transform: scale(1);
+            transition: 1s ease;
+            border: 1px #118ab2 solid;
+            
+        }
+        @media screen and (max-width: 428px){
+            padding: .3rem;
+            width: 150px;
+        }
+    }
 `
 
 const Contatos = () => {
+
+    const HandlerSubmit = (event) => {
+        event.preventDefault();
+        alert("Obrigado Pela mensagem! :)")
+    }
     return (
         <>
             <Header />
@@ -103,20 +136,21 @@ const Contatos = () => {
                 <h2>Nos envie uma Mensagem!</h2>
                 <p>Para dúvidas ou surgestões entre em contato conosco 😄</p>
             </Section>
-                <SectionContato>
-                    <h3> <FaTooth /> Insira seus dados: <FaTooth /></h3>
-                    <form action="Post" method="post">
-                        <label htmlFor="name"> <FaTooth />: Insira seu nome</label>
-                        <input type="text" name="name" id="name" placeholder='João Silva' required />
-                        <label htmlFor="email"><FaTooth />: Insira seu e-mail</label>
-                        <input type="email" name="email" id="email" placeholder='Joaosilva@gmail.com' />
-                        <label htmlFor="phone"><FaTooth />: Telefone</label>
-                        <input type="number" name="phone" id="phone" placeholder='(99) 1234-5678' required />
-                        <label htmlFor="msg"><FaTooth />: Insira sua dúvida ou sugestão</label>
-                        <textarea name="msg" id="" cols="55" rows="10" placeholder='Olá, pessoal da Ortodoc 😄'></textarea>
-                    </form>
+            <SectionContato>
+                <h3> <FaTooth /> Insira seus dados: <FaTooth /></h3>
+                <form onSubmit={HandlerSubmit} >
+                    <label htmlFor="name"> <FaTooth />: Insira seu nome</label>
+                    <input type="text" name="name" id="name" placeholder='João Silva' required />
+                    <label htmlFor="email"><FaTooth />: Insira seu e-mail</label>
+                    <input type="email" name="email" id="email" placeholder='Joaosilva@gmail.com' />
+                    <label htmlFor="phone"><FaTooth />: Telefone</label>
+                    <input type="number" name="phone" id="phone" placeholder='(99) 1234-5678' required />
+                    <label htmlFor="msg"><FaTooth />: Insira sua dúvida ou sugestão</label>
+                    <textarea name="msg" id="" cols="55" rows="10" placeholder='Olá, pessoal da Ortodoc 😄'></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
 
-                </SectionContato>
+            </SectionContato>
             <Footer />
         </>
     )
