@@ -30,6 +30,7 @@ const TittlePrincipal = styled.h2`
     font-size: 3.2rem;
     font-family: 'Poppins', sans-serif;
     margin:  0;
+    text-shadow: 1px 1px 1px #6d6a6a;
     font-weight: bold;
     color: ${colorPrimary};
 

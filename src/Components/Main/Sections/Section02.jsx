@@ -1,6 +1,6 @@
 import React from 'react';
 import { colorPrimary } from '../../../variaveis';
-import imagem02 from "../../../assets/img/dentist-doing-a-check-up-on-the-patient-min.jpg"
+import imagem02 from "../../../assets/img/dentist-doing-check-up-patient.jpg"
 import styled from 'styled-components';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "animate.css/animate.min.css";
@@ -8,13 +8,14 @@ import "animate.css/animate.min.css";
 const Section = styled.div`
     margin: 8rem 1rem;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     align-items: center;
 @media screen and (max-width: 768px){
         gap: 0rem;
         flex-direction: column;
         width: 80%;
         margin: 0 auto;
+    
     
     }
 `
@@ -60,8 +61,12 @@ const NameCLinica = styled.span`
 
 export const Imagem = styled.img`
     border-radius: 10px;
+    width: 550px;
     box-shadow: 1px 1px 5px black;
     @media screen and (max-width: 768px){
+        width: 550px;
+    }
+    @media screen and (max-width: 428px){
         width: 100%;
     }
 `
@@ -72,7 +77,7 @@ const Section02 = () => {
             <AnimationOnScroll animateIn='animate__fadeInLeft'>
                 <Imagem src={imagem02}
                     alt="dentista e paciente fazendo tratamento"
-                    width="90%" />
+                />
             </AnimationOnScroll>
 
             <AnimationOnScroll animateIn='animate__fadeInRight'>
