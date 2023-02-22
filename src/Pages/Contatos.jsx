@@ -107,6 +107,7 @@ const SectionContato = styled.section`
         color: white;
         width: inherit;
         font-weight: 600;
+        cursor: pointer;
         box-shadow: 1px 1px 4px black;
         letter-spacing: .2rem;
         &:hover{
