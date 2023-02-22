@@ -261,7 +261,7 @@ const Footer = () => {
                     <p>por</p>
                     <h5>Luís Soares</h5>
                     <a href="https://github.com/Soaressluiss" target="_blank" rel="noreferrer"> <BsGithub style={{ color: "black" }} /></a>
-                    <a href="https://www.linkedin.com/in/luis-soares-281589234/" target="_blank" rel="noreferrer"> <BsLinkedin style={{ color: "#0e76a8" }} /></a>
+                    <a href="https://www.linkedin.com/in/LuisSoaresDeveloper" target="_blank" rel="noreferrer"> <BsLinkedin style={{ color: "#0e76a8" }} /></a>
                 </div>
             </ContatoDev>
         </>

@@ -92,4 +92,4 @@ npm start
 
 #### Gostou do projeto? Me mande uma mensagem!😄
 
-<a href="https://www.linkedin.com/in/luis-soares-281589234/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+<a href="https://www.linkedin.com/in/LuisSoaresDeveloper" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
